@@ -96,6 +96,11 @@ class _AppViewState extends State<AppView> {
                   SplashScreen.route(),
                   (route) => false,
                 );
+              default:
+                _navigator.pushAndRemoveUntil(
+                  SplashScreen.route(),
+                  (route) => false,
+                );
             }
           },
           child: child,
