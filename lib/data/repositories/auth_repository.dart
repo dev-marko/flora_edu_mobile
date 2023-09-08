@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
 
-import '../models/flora_edu_user.dart';
+import '../models/auth/flora_edu_user.dart';
 import '../storage/secure_storage.dart';
 
 // unknown == initial

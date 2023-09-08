@@ -1,6 +1,6 @@
 import 'package:uuid/uuid.dart';
 
-import '../models/flora_edu_user.dart';
+import '../models/auth/flora_edu_user.dart';
 
 class UserRepository {
   FloraEduUser? _user;

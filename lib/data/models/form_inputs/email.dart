@@ -1,5 +1,5 @@
-import 'validators.dart';
 import 'package:formz/formz.dart';
+import 'validators.dart';
 
 class Email extends FormzInput<String, EmailValidationError> {
   const Email.pure() : super.pure('');

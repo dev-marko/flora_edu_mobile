@@ -1,5 +1,5 @@
-import 'validators.dart';
 import 'package:formz/formz.dart';
+import 'validators.dart';
 
 class Password extends FormzInput<String, PasswordValidationError> {
   const Password.pure() : super.pure('');
