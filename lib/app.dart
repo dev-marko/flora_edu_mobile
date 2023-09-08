@@ -1,4 +1,4 @@
-import 'presentation/screens/register_screen.dart';
+import 'package:flora_edu_mobile/data/repositories/plant_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -8,6 +8,7 @@ import 'data/repositories/user_repository.dart';
 import 'presentation/router/app_router.dart';
 import 'presentation/screens/home_screen.dart';
 import 'presentation/screens/login_screen.dart';
+import 'presentation/screens/register_screen.dart';
 import 'presentation/screens/splash_screen.dart';
 
 class App extends StatefulWidget {
@@ -71,6 +72,22 @@ class _AppViewState extends State<AppView> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.green,
+          accentColor: Colors.brown,
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.green,
+          iconTheme: IconThemeData(
+            color: Colors.brown,
+          ),
+          actionsIconTheme: IconThemeData(
+            color: Colors.brown,
+          ),
+        ),
+      ),
       navigatorKey: _navigatorKey,
       builder: (context, child) {
         return BlocListener<AuthBloc, AuthState>(
