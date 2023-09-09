@@ -18,17 +18,9 @@ class LoginForm extends StatelessWidget {
             ..hideCurrentSnackBar()
             ..showSnackBar(
               const SnackBar(
-                content: Text('Oops: An error occured!'),
+                content: Text('Серверска грешка!'),
               ),
             );
-        } else if (state.goToRegisterScreen) {
-          // Navigator.of(context).push(RegisterScreen.route()).then(
-          //       (_) => {
-          //         context.read<LoginBloc>().add(
-          //               const LoginRegisterScreenRequested(false),
-          //             )
-          //       },
-          //     );
         }
       },
       child: Card(
@@ -70,9 +62,15 @@ class _EmailInput extends StatelessWidget {
               context.read<LoginBloc>().add(LoginEmailChanged(email)),
           keyboardType: TextInputType.emailAddress,
           decoration: InputDecoration(
-            labelText: 'Email',
+            labelText: 'Е-пошта',
+            icon: const Icon(Icons.email),
+            enabledBorder: UnderlineInputBorder(
+              borderSide: BorderSide(
+                color: Theme.of(context).colorScheme.secondary,
+              ),
+            ),
             errorText:
-                state.email.displayError != null ? 'Invalid email' : null,
+                state.email.displayError != null ? 'Невалидна е-пошта' : null,
           ),
         );
       },
@@ -92,9 +90,16 @@ class _PasswordInput extends StatelessWidget {
               context.read<LoginBloc>().add(LoginPasswordChanged(password)),
           obscureText: true,
           decoration: InputDecoration(
-            labelText: 'Password',
-            errorText:
-                state.password.displayError != null ? 'Invalid password' : null,
+            labelText: 'Лозинка',
+            icon: const Icon(Icons.password),
+            enabledBorder: UnderlineInputBorder(
+              borderSide: BorderSide(
+                color: Theme.of(context).colorScheme.secondary,
+              ),
+            ),
+            errorText: state.password.displayError != null
+                ? 'Невалидна лозинка'
+                : null,
           ),
         );
       },
@@ -131,7 +136,7 @@ class _LoginButton extends StatelessWidget {
                   foregroundColor:
                       MaterialStateProperty.all<Color>(Colors.white),
                 ),
-                child: const Text('Login'),
+                child: const Text('Најави се'),
               );
       },
     );
@@ -159,7 +164,7 @@ class _NavigateToRegisterScreenButton extends StatelessWidget {
             ),
           ),
           child: const Text(
-            'Click here to register!',
+            'Кликнете тука за регистрација!',
             textAlign: TextAlign.center,
           ),
         );

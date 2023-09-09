@@ -18,7 +18,7 @@ class RegisterForm extends StatelessWidget {
             ..hideCurrentSnackBar()
             ..showSnackBar(
               const SnackBar(
-                content: Text('Oops: An error occured!'),
+                content: Text('Серверска грешка!'),
               ),
             );
         }
@@ -62,9 +62,15 @@ class _EmailInput extends StatelessWidget {
               context.read<RegisterBloc>().add(RegisterEmailChanged(email)),
           keyboardType: TextInputType.emailAddress,
           decoration: InputDecoration(
-            labelText: 'Email',
+            labelText: 'Е-пошта',
+            icon: const Icon(Icons.email),
+            enabledBorder: UnderlineInputBorder(
+              borderSide: BorderSide(
+                color: Theme.of(context).colorScheme.secondary,
+              ),
+            ),
             errorText:
-                state.email.displayError != null ? 'Invalid email' : null,
+                state.email.displayError != null ? 'Невалидна е-пошта' : null,
           ),
         );
       },
@@ -85,9 +91,16 @@ class _PasswordInput extends StatelessWidget {
               .add(RegisterPasswordChanged(password)),
           obscureText: true,
           decoration: InputDecoration(
-            labelText: 'Password',
-            errorText:
-                state.password.displayError != null ? 'Invalid password' : null,
+            labelText: 'Лозинка',
+            icon: const Icon(Icons.password),
+            enabledBorder: UnderlineInputBorder(
+              borderSide: BorderSide(
+                color: Theme.of(context).colorScheme.secondary,
+              ),
+            ),
+            errorText: state.password.displayError != null
+                ? 'Невалидна лозинка'
+                : null,
           ),
         );
       },
@@ -109,9 +122,15 @@ class _ConfirmPasswordInput extends StatelessWidget {
               .add(RegisterConfirmPasswordChanged(confirmPassword)),
           obscureText: true,
           decoration: InputDecoration(
-            labelText: 'Confirm Password',
+            labelText: 'Потврди лозинка',
+            icon: const Icon(Icons.password),
+            enabledBorder: UnderlineInputBorder(
+              borderSide: BorderSide(
+                color: Theme.of(context).colorScheme.secondary,
+              ),
+            ),
             errorText: state.confirmPassword.displayError != null
-                ? 'Passwords don\'t match'
+                ? 'Лозинките не се совпаѓаат'
                 : null,
           ),
         );
@@ -150,7 +169,7 @@ class _RegisterButton extends StatelessWidget {
                   foregroundColor:
                       MaterialStateProperty.all<Color>(Colors.white),
                 ),
-                child: const Text('Register'),
+                child: const Text('Регистрирај се'),
               );
       },
     );
