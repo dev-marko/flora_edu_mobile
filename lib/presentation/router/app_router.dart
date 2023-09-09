@@ -1,12 +1,14 @@
+import 'package:flora_edu_mobile/presentation/screens/home_screen.dart';
+import 'package:flora_edu_mobile/presentation/screens/plants/plants_list_screen.dart';
 import 'package:flutter/material.dart';
-
-import '../screens/test_screen.dart';
 
 class AppRouter {
   Route<dynamic> generateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
-      case '/test':
-        return TestScreen.route();
+      case '/' || '/home':
+        return HomeScreen.route();
+      case '/plants':
+        return PlantsListScreen.route();
       default:
         return _errorRoute();
     }
