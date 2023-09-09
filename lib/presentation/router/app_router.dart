@@ -1,5 +1,5 @@
-import 'package:flora_edu_mobile/presentation/screens/home_screen.dart';
-import 'package:flora_edu_mobile/presentation/screens/plants/plants_list_screen.dart';
+import '../screens/home_screen.dart';
+import '../screens/plants/plants_list_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {

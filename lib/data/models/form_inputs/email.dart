@@ -1,4 +1,5 @@
 import 'package:formz/formz.dart';
+
 import 'validators.dart';
 
 class Email extends FormzInput<String, EmailValidationError> {
