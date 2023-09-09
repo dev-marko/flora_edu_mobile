@@ -1,6 +1,8 @@
-import 'package:flora_edu_mobile/blocs/plants_list/plants_list_bloc.dart';
-import 'package:flora_edu_mobile/data/repositories/plant_repository.dart';
-import 'package:flora_edu_mobile/presentation/views/plants/plants_list_view.dart';
+import '../../../blocs/plants_list/plants_list_bloc.dart';
+import '../../../data/repositories/plant_repository.dart';
+import '../../views/plants/plants_list_view.dart';
+import '../../../shared/widgets/flora_edu_app_drawer.dart';
+import '../../../shared/widgets/flora_edu_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -30,11 +32,10 @@ class _PlantsListScreenState extends State<PlantsListScreen> {
       value: _plantRepository,
       child: BlocProvider(
         create: (_) => PlantsListBloc(plantRepository: _plantRepository),
-        child: Scaffold(
-          appBar: AppBar(
-            title: const Text('Plants'),
-          ),
-          body: const PlantsListView(),
+        child: const Scaffold(
+          appBar: FloraEduAppBar(),
+          drawer: FloraEduAppDrawer(),
+          body: PlantsListView(),
         ),
       ),
     );
