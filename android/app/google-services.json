@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "808218864114",
+    "firebase_url": "https://flora-edu-mobile-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "flora-edu-mobile",
     "storage_bucket": "flora-edu-mobile.appspot.com"
   },
@@ -29,6 +30,13 @@
             {
               "client_id": "808218864114-nmhd3lmejt5jbj0k9o0nd5svjq2aeqj2.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "808218864114-2s5v16rki6v2k4fq62coujk0j9mvk049.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.floraEduMobile"
+              }
             }
           ]
         }
