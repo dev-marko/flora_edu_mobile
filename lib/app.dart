@@ -75,15 +75,15 @@ class _AppViewState extends State<AppView> {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSwatch(
           primarySwatch: Colors.green,
-          accentColor: Colors.brown,
+          accentColor: Colors.black,
         ),
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.green,
           iconTheme: IconThemeData(
-            color: Colors.brown,
+            color: Colors.black,
           ),
           actionsIconTheme: IconThemeData(
-            color: Colors.brown,
+            color: Colors.black,
           ),
         ),
       ),
