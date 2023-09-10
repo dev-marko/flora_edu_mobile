@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'blocs/auth/auth_bloc.dart';
-import 'data/repositories/auth_repository.dart';
-import 'data/repositories/user_repository.dart';
-import 'presentation/router/app_router.dart';
-import 'presentation/screens/home_screen.dart';
-import 'presentation/screens/login_screen.dart';
-import 'presentation/screens/register_screen.dart';
-import 'presentation/screens/splash_screen.dart';
+import 'features/authentication/blocs/auth/auth_bloc.dart';
+import 'features/authentication/data/repositories/auth_repository.dart';
+import 'features/authentication/data/repositories/user_repository.dart';
+import 'features/authentication/presentation/screens/login_screen.dart';
+import 'features/authentication/presentation/screens/register_screen.dart';
+import 'router/app_router.dart';
+import 'shared/screens/home_screen.dart';
+import 'shared/screens/splash_screen.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
