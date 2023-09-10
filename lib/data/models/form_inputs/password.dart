@@ -1,4 +1,5 @@
 import 'package:formz/formz.dart';
+
 import 'validators.dart';
 
 class Password extends FormzInput<String, PasswordValidationError> {

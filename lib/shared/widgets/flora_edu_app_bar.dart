@@ -1,4 +1,6 @@
+import '../../blocs/auth/auth_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FloraEduAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -24,7 +26,12 @@ class FloraEduAppBar extends StatelessWidget implements PreferredSizeWidget {
             MenuItemButton(
               child: const Text('Поставки'),
               onPressed: () {},
-            )
+            ),
+            MenuItemButton(
+              child: const Text('Одјава'),
+              onPressed: () =>
+                  context.read<AuthBloc>().add(AuthLogoutRequested()),
+            ),
           ],
           builder:
               (BuildContext context, MenuController controller, Widget? child) {

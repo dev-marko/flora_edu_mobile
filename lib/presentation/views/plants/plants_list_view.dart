@@ -1,7 +1,7 @@
-import 'package:flora_edu_mobile/blocs/plants_list/plants_list_bloc.dart';
-import 'package:flora_edu_mobile/data/models/plants/plants_list_item.dart';
-import 'package:flora_edu_mobile/presentation/screens/splash_screen.dart';
-import 'package:flora_edu_mobile/presentation/widgets/plants/plant_card.dart';
+import '../../../blocs/plants_list/plants_list_bloc.dart';
+import '../../../data/models/plants/plants_list_item.dart';
+import '../../screens/splash_screen.dart';
+import '../../widgets/plants/plant_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -80,42 +80,40 @@ class _PlantsListSuccess extends StatelessWidget {
                 constraints: const BoxConstraints(
                   maxHeight: 550.0,
                 ),
-                child: Expanded(
-                  child: Stack(
-                    children: [
-                      ListView.builder(
-                        key: UniqueKey(),
-                        shrinkWrap: true,
-                        itemCount: plants.length,
-                        itemBuilder: (context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: PlantCard(plant: plants[index]),
-                          );
-                        },
-                      ),
-                      Positioned(
-                        bottom: 0,
-                        left: 0,
-                        right: 0,
-                        height: 15,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                                Theme.of(context)
-                                    .scaffoldBackgroundColor
-                                    .withOpacity(0.0),
-                                Theme.of(context).scaffoldBackgroundColor,
-                              ],
-                            ),
+                child: Stack(
+                  children: [
+                    ListView.builder(
+                      key: UniqueKey(),
+                      shrinkWrap: true,
+                      itemCount: plants.length,
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: PlantCard(plant: plants[index]),
+                        );
+                      },
+                    ),
+                    Positioned(
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      height: 15,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [
+                              Theme.of(context)
+                                  .scaffoldBackgroundColor
+                                  .withOpacity(0.0),
+                              Theme.of(context).scaffoldBackgroundColor,
+                            ],
                           ),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),

@@ -1,4 +1,4 @@
-import 'package:flora_edu_mobile/presentation/screens/plants/plants_list_screen.dart';
+import 'plants/plants_list_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
