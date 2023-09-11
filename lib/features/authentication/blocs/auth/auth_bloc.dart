@@ -1,12 +1,11 @@
 import 'dart:async';
 
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../data/models/flora_edu_user.dart';
 import '../../data/repositories/auth_repository.dart';
 import '../../data/repositories/user_repository.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-
-
 
 part 'auth_event.dart';
 part 'auth_state.dart';

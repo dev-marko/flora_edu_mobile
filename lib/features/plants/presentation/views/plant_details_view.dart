@@ -1,11 +1,11 @@
 
-import '../../blocs/plant_details/plant_details_bloc.dart';
-import '../../data/models/plant_details.dart';
-
-import '../../../../shared/screens/splash_screen.dart';
-import '../widgets/plant_comment_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../shared/screens/splash_screen.dart';
+import '../../blocs/plant_details/plant_details_bloc.dart';
+import '../../data/models/plant_details.dart';
+import '../widgets/plant_comment_card.dart';
 
 class PlantDetailsView extends StatelessWidget {
   final String plantId;

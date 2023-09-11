@@ -1,8 +1,8 @@
-import '../../data/models/plant_details.dart';
-
-import '../../data/repositories/plant_repository.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../data/models/plant_details.dart';
+import '../../data/repositories/plant_repository.dart';
 
 part 'plant_details_event.dart';
 part 'plant_details_state.dart';
