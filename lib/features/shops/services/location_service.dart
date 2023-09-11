@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import '../../../shared/constants/environment.dart';
 
 class LocationService {
-  final String googleMapsApiKey = 'AIzaSyDgwpECAvcqaKInC9YkC1iC5YOXopdwgPM';
+  final String googleMapsApiKey = Environment.googleMapsApiKey;
 
   Future<String> _getPlaceId(String input) async {
     final String url =

@@ -19,4 +19,9 @@ class Environment {
     return dotenv.get('FIREBASE_IOS_API_KEY',
         fallback: 'Firebase iOS API key not found.');
   }
+
+  static String get googleMapsApiKey {
+    return dotenv.get('GOOGLE_MAPS_API_KEY',
+        fallback: 'Google Maps API key not found.');
+  }
 }
