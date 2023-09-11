@@ -1,6 +1,7 @@
-import '../shared/screens/home_screen.dart';
-import '../features/plants/presentation/screens/plants_list_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../features/plants/presentation/screens/plants_list_screen.dart';
+import '../shared/screens/home_screen.dart';
 
 class AppRouter {
   Route<dynamic> generateRoute(RouteSettings routeSettings) {
