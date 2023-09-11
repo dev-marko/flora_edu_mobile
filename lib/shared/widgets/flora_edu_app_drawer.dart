@@ -1,3 +1,6 @@
+import 'package:flora_edu_mobile/features/plant_gallery/screens/plant_gallery_screen.dart';
+import 'package:flora_edu_mobile/features/plant_gallery/views/plant_gallery_view.dart';
+
 import '../../features/shops/presentation/screens/shops_map_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -30,6 +33,14 @@ class FloraEduAppDrawer extends StatelessWidget {
             },
             leading: const Icon(Icons.map),
             title: const Text('Мапа од продавници'),
+          ),
+          const Divider(),
+          ListTile(
+            onTap: () {
+              Navigator.of(context).pushReplacement(PlantGalleryScreen.route());
+            },
+            leading: const Icon(Icons.image),
+            title: const Text('Галерија'),
           ),
           const Divider(),
           ListTile(
