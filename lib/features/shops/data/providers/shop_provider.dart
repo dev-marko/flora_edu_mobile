@@ -1,6 +1,7 @@
 import 'package:firebase_database/firebase_database.dart';
-import '../models/shop.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+
+import '../models/shop.dart';
 
 class ShopProvider {
   final FirebaseDatabase _dbInstance = FirebaseDatabase.instance;

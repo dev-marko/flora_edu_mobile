@@ -1,10 +1,11 @@
 import 'dart:async';
 
-import '../../bloc/shops_map/shops_map_bloc.dart';
-import '../../../../shared/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+
+import '../../../../shared/screens/splash_screen.dart';
+import '../../bloc/shops_map/shops_map_bloc.dart';
 
 class ShopsMapView extends StatelessWidget {
   const ShopsMapView({super.key});

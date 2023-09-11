@@ -1,10 +1,11 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../shared/widgets/flora_edu_app_bar.dart';
+import '../../../../shared/widgets/flora_edu_app_drawer.dart';
 import '../../bloc/shops_map/shops_map_bloc.dart';
 import '../../data/repositories/shop_repository.dart';
 import '../views/shops_map_view.dart';
-import '../../../../shared/widgets/flora_edu_app_bar.dart';
-import '../../../../shared/widgets/flora_edu_app_drawer.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ShopsMapScreen extends StatefulWidget {
   const ShopsMapScreen({super.key});
