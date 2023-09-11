@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
 
-import '../models/flora_edu_user.dart';
 import '../../../../storage/secure_storage.dart';
+import '../models/flora_edu_user.dart';
 
 // unknown == initial
 enum AuthStatus { unknown, authenticated, unauthenticated, registering }

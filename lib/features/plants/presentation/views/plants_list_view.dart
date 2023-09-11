@@ -1,11 +1,10 @@
-import '../../blocs/plants_list/plants_list_bloc.dart';
-import '../../data/models/plants_list_item.dart';
-
-
-import '../../../../shared/screens/splash_screen.dart';
-import '../widgets/plant_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../shared/screens/splash_screen.dart';
+import '../../blocs/plants_list/plants_list_bloc.dart';
+import '../../data/models/plants_list_item.dart';
+import '../widgets/plant_card.dart';
 
 class PlantsListView extends StatelessWidget {
   const PlantsListView({super.key});

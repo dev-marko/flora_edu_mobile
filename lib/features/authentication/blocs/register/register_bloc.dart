@@ -1,11 +1,11 @@
-import '../../../../shared/models/form_inputs/confirm_password.dart';
+import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:formz/formz.dart';
 
+import '../../../../shared/models/form_inputs/confirm_password.dart';
 import '../../../../shared/models/form_inputs/email.dart';
 import '../../../../shared/models/form_inputs/password.dart';
 import '../../data/repositories/auth_repository.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:equatable/equatable.dart';
-import 'package:formz/formz.dart';
 
 part 'register_event.dart';
 part 'register_state.dart';

@@ -1,9 +1,10 @@
 import 'dart:async';
 
+import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../data/models/plants_list_item.dart';
 import '../../data/repositories/plant_repository.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:equatable/equatable.dart';
 
 part 'plants_list_event.dart';
 part 'plants_list_state.dart';

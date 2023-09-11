@@ -1,12 +1,12 @@
 
-import '../../blocs/plants_list/plants_list_bloc.dart';
-
-import '../../data/repositories/plant_repository.dart';
-import '../views/plants_list_view.dart';
-import '../../../../shared/widgets/flora_edu_app_drawer.dart';
-import '../../../../shared/widgets/flora_edu_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../shared/widgets/flora_edu_app_bar.dart';
+import '../../../../shared/widgets/flora_edu_app_drawer.dart';
+import '../../blocs/plants_list/plants_list_bloc.dart';
+import '../../data/repositories/plant_repository.dart';
+import '../views/plants_list_view.dart';
 
 class PlantsListScreen extends StatefulWidget {
   const PlantsListScreen({super.key});

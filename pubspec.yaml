@@ -50,6 +50,10 @@ dependencies:
   get_it: ^7.6.0
   flutter_secure_storage: ^8.0.0
   google_fonts: ^5.1.0
+  flutter_polyline_points: ^2.0.0
+  google_maps_flutter: ^2.5.0
+  location: ^5.0.3
+  geolocator: ^10.0.1
 
 dev_dependencies:
   flutter_test:
