@@ -1,7 +1,7 @@
-import 'package:flora_edu_mobile/features/plant_gallery/providers/plant_gallery_provider.dart';
-import 'package:flora_edu_mobile/features/plant_gallery/screens/add_plant_picture_screen.dart';
-import 'package:flora_edu_mobile/shared/widgets/flora_edu_app_bar.dart';
-import 'package:flora_edu_mobile/shared/widgets/flora_edu_app_drawer.dart';
+import '../providers/plant_gallery_provider.dart';
+import '../screens/add_plant_picture_screen.dart';
+import '../../../shared/widgets/flora_edu_app_bar.dart';
+import '../../../shared/widgets/flora_edu_app_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

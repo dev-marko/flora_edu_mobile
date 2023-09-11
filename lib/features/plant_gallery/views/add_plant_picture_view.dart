@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:flora_edu_mobile/features/plant_gallery/providers/plant_gallery_provider.dart';
-import 'package:flora_edu_mobile/features/plant_gallery/widgets/image_input.dart';
+import '../providers/plant_gallery_provider.dart';
+import '../widgets/image_input.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

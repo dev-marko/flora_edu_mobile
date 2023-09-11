@@ -1,10 +1,11 @@
 import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:uuid/uuid.dart';
+
 import '../models/plant_comment.dart';
 import '../models/plant_details.dart';
 import '../models/plants_list_item.dart';
-import 'package:uuid/uuid.dart';
 import '../providers/plant_provider.dart';
 
 class PlantRepository {

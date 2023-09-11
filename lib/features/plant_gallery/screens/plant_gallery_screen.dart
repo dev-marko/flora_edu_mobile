@@ -1,5 +1,5 @@
-import 'package:flora_edu_mobile/features/plant_gallery/providers/plant_gallery_provider.dart';
-import 'package:flora_edu_mobile/features/plant_gallery/views/plant_gallery_view.dart';
+import '../providers/plant_gallery_provider.dart';
+import '../views/plant_gallery_view.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
