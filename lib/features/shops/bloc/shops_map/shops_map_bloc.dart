@@ -21,7 +21,7 @@ class ShopsMapBloc extends Bloc<ShopsMapEvent, ShopsMapState> {
   ShopsMapBloc({required ShopRepository shopRepository})
       : _shopRepository = shopRepository,
         super(const ShopsMapState(
-          status: Status.initial,
+          status: ShopsMapStatus.initial,
           initialLocation: LatLng(41.9287974706416, 21.522592234934194),
           markers: {},
           polygons: {},
@@ -39,7 +39,7 @@ class ShopsMapBloc extends Bloc<ShopsMapEvent, ShopsMapState> {
     Emitter<ShopsMapState> emit,
   ) async {
     try {
-      emit(state.copyWith(status: Status.loading));
+      emit(state.copyWith(status: ShopsMapStatus.loading));
 
       var markers = <Marker>{};
 
@@ -50,7 +50,7 @@ class ShopsMapBloc extends Bloc<ShopsMapEvent, ShopsMapState> {
       }
 
       emit(state.copyWith(
-        status: Status.success,
+        status: ShopsMapStatus.success,
         markers: markers,
       ));
     } catch (err) {
@@ -77,14 +77,12 @@ class ShopsMapBloc extends Bloc<ShopsMapEvent, ShopsMapState> {
           polylineId: PolylineId(const Uuid().v4()),
           width: 6,
           color: Colors.blue,
-          points: points
-              .map((point) => LatLng(point.latitude, point.longitude))
-              .toList(),
+          points: points.map((point) => LatLng(point.latitude, point.longitude)).toList(),
         ),
       );
 
       emit(state.copyWith(
-        status: Status.success,
+        status: ShopsMapStatus.success,
         polylines: polylines,
       ));
     } catch (err) {
@@ -96,7 +94,7 @@ class ShopsMapBloc extends Bloc<ShopsMapEvent, ShopsMapState> {
     ShopsMapLocateNearestShop event,
     Emitter<ShopsMapState> emit,
   ) async {
-    emit(state.copyWith(status: Status.loading));
+    emit(state.copyWith(status: ShopsMapStatus.loading));
     var location = Location();
 
     var serviceEnabled = await location.serviceEnabled();
@@ -151,14 +149,12 @@ class ShopsMapBloc extends Bloc<ShopsMapEvent, ShopsMapState> {
         polylineId: PolylineId(const Uuid().v4()),
         width: 6,
         color: Colors.blue,
-        points: points
-            .map((point) => LatLng(point.latitude, point.longitude))
-            .toList(),
+        points: points.map((point) => LatLng(point.latitude, point.longitude)).toList(),
       ),
     );
 
     emit(state.copyWith(
-      status: Status.success,
+      status: ShopsMapStatus.success,
       polylines: polylines,
     ));
   }

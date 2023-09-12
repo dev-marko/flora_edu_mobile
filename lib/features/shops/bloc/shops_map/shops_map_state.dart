@@ -1,9 +1,9 @@
 part of 'shops_map_bloc.dart';
 
-enum Status { initial, loading, success, failure }
+enum ShopsMapStatus { initial, loading, success, failure }
 
 class ShopsMapState extends Equatable {
-  final Status status;
+  final ShopsMapStatus status;
   final LatLng initialLocation;
   final Set<Marker> markers;
   final Set<Polygon> polygons;
@@ -23,7 +23,7 @@ class ShopsMapState extends Equatable {
   });
 
   ShopsMapState copyWith({
-    Status? status,
+    ShopsMapStatus? status,
     LatLng? initialLocation,
     Set<Marker>? markers,
     Set<Polygon>? polygons,
@@ -43,13 +43,5 @@ class ShopsMapState extends Equatable {
   }
 
   @override
-  List<Object> get props => [
-        status,
-        initialLocation,
-        markers,
-        polygons,
-        polylines,
-        polygonLatLngs,
-        errorMessage
-      ];
+  List<Object> get props => [status, initialLocation, markers, polygons, polylines, polygonLatLngs, errorMessage];
 }

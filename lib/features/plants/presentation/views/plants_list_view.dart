@@ -1,3 +1,4 @@
+import 'package:flora_edu_mobile/shared/widgets/list_gradient.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -94,26 +95,7 @@ class _PlantsListSuccess extends StatelessWidget {
                         );
                       },
                     ),
-                    Positioned(
-                      bottom: 0,
-                      left: 0,
-                      right: 0,
-                      height: 15,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [
-                              Theme.of(context)
-                                  .scaffoldBackgroundColor
-                                  .withOpacity(0.0),
-                              Theme.of(context).scaffoldBackgroundColor,
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
+                    const ListGradient(),
                   ],
                 ),
               ),

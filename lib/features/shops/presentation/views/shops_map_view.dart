@@ -14,21 +14,21 @@ class ShopsMapView extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<ShopsMapBloc, ShopsMapState>(
       builder: (context, state) {
-        if (state.status == Status.initial) {
+        if (state.status == ShopsMapStatus.initial) {
           context.read<ShopsMapBloc>().add(const ShopsMapLoad());
         }
 
-        if (state.status == Status.loading) {
+        if (state.status == ShopsMapStatus.loading) {
           return const Center(
             child: CircularProgressIndicator(),
           );
         }
 
-        if (state.status == Status.success) {
+        if (state.status == ShopsMapStatus.success) {
           return _ShopsMapSuccess(bloc: BlocProvider.of<ShopsMapBloc>(context));
         }
 
-        if (state.status == Status.failure) {
+        if (state.status == ShopsMapStatus.failure) {
           return const Center(
             child: CircularProgressIndicator(),
           );
@@ -37,7 +37,7 @@ class ShopsMapView extends StatelessWidget {
         return const SplashScreen();
       },
       listener: (context, state) {
-        if (state.status == Status.failure) {
+        if (state.status == ShopsMapStatus.failure) {
           ScaffoldMessenger.of(context)
             ..hideCurrentSnackBar()
             ..showSnackBar(

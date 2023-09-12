@@ -1,3 +1,4 @@
+import 'package:flora_edu_mobile/features/blog/presentation/screens/blogs_list_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../features/plant_gallery/screens/plant_gallery_screen.dart';
@@ -25,6 +26,15 @@ class FloraEduAppDrawer extends StatelessWidget {
             leading: const Icon(Icons.grass),
             title: const Text('Растенија'),
           ),
+          const Divider(),
+          ListTile(
+            onTap: () {
+              Navigator.of(context).pushReplacement(BlogsListScreen.route());
+            },
+            leading: const Icon(Icons.article),
+            title: const Text('Блог'),
+          ),
+          const Divider(),
           ListTile(
             onTap: () {
               Navigator.of(context).pushReplacement(ShopsMapScreen.route());
