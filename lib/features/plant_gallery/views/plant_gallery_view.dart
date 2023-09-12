@@ -1,9 +1,10 @@
-import '../providers/plant_gallery_provider.dart';
-import '../screens/add_plant_picture_screen.dart';
-import '../../../shared/widgets/flora_edu_app_bar.dart';
-import '../../../shared/widgets/flora_edu_app_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../../../shared/widgets/flora_edu_app_bar.dart';
+import '../../../shared/widgets/flora_edu_app_drawer.dart';
+import '../providers/plant_gallery_provider.dart';
+import '../screens/add_plant_picture_screen.dart';
 
 class PlantGalleryView extends StatefulWidget {
   const PlantGalleryView({super.key});

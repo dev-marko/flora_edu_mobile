@@ -1,5 +1,5 @@
-import 'package:flora_edu_mobile/features/blog/cubit/blogs_list_cubit.dart';
-import 'package:flora_edu_mobile/features/blog/data/models/article_item.dart';
+import '../../cubit/blogs_list_cubit.dart';
+import '../../data/models/article_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';

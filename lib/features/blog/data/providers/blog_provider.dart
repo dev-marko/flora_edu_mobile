@@ -1,6 +1,6 @@
 import 'package:firebase_database/firebase_database.dart';
-import 'package:flora_edu_mobile/features/authentication/data/models/flora_edu_user.dart';
-import 'package:flora_edu_mobile/features/blog/data/models/article_item.dart';
+import '../../../authentication/data/models/flora_edu_user.dart';
+import '../models/article_item.dart';
 
 class BlogProvider {
   final FirebaseDatabase _dbInstance = FirebaseDatabase.instance;

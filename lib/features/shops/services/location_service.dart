@@ -1,7 +1,9 @@
 import 'dart:convert' as convert;
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:http/http.dart' as http;
+
 import '../../../shared/constants/environment.dart';
 
 class LocationService {

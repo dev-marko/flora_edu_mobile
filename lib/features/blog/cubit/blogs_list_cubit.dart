@@ -1,5 +1,5 @@
-import 'package:flora_edu_mobile/features/blog/data/models/article_item.dart';
-import 'package:flora_edu_mobile/features/blog/data/repositories/blog_repository.dart';
+import '../data/models/article_item.dart';
+import '../data/repositories/blog_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 

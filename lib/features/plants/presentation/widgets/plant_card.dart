@@ -1,8 +1,8 @@
 
-import '../../data/models/plants_list_item.dart';
-
-import '../screens/plant_details_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../../data/models/plants_list_item.dart';
+import '../screens/plant_details_screen.dart';
 
 class PlantCard extends StatelessWidget {
   final PlantsListItem plant;

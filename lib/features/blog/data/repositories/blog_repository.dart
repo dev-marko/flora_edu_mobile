@@ -1,5 +1,5 @@
-import 'package:flora_edu_mobile/features/blog/data/models/article_item.dart';
-import 'package:flora_edu_mobile/features/blog/data/providers/blog_provider.dart';
+import '../models/article_item.dart';
+import '../providers/blog_provider.dart';
 
 class BlogRepository {
   final BlogProvider _blogProvider = BlogProvider();

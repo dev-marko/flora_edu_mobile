@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flora_edu_mobile/features/authentication/data/models/flora_edu_user.dart';
+import '../../../authentication/data/models/flora_edu_user.dart';
 
 class ArticleItem extends Equatable {
   final String id;

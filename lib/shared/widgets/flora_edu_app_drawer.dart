@@ -1,4 +1,4 @@
-import 'package:flora_edu_mobile/features/blog/presentation/screens/blogs_list_screen.dart';
+import '../../features/blog/presentation/screens/blogs_list_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../features/plant_gallery/screens/plant_gallery_screen.dart';

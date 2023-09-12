@@ -1,8 +1,7 @@
-import 'package:flora_edu_mobile/features/blog/cubit/blogs_list_cubit.dart';
-import 'package:flora_edu_mobile/features/blog/data/models/article_item.dart';
-import 'package:flora_edu_mobile/features/blog/presentation/widgets/article_card.dart';
-import 'package:flora_edu_mobile/shared/screens/splash_screen.dart';
-import 'package:flora_edu_mobile/shared/widgets/list_gradient.dart';
+import '../../cubit/blogs_list_cubit.dart';
+import '../../data/models/article_item.dart';
+import '../widgets/article_card.dart';
+import '../../../../shared/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

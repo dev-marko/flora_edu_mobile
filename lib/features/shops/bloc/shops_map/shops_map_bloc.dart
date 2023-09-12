@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:equatable/equatable.dart';
-import '../../data/repositories/shop_repository.dart';
-import '../../services/location_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
@@ -10,6 +8,9 @@ import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
 import 'package:uuid/uuid.dart';
+
+import '../../data/repositories/shop_repository.dart';
+import '../../services/location_service.dart';
 
 part 'shops_map_event.dart';
 part 'shops_map_state.dart';

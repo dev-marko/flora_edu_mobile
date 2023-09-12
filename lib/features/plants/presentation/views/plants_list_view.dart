@@ -1,4 +1,4 @@
-import 'package:flora_edu_mobile/shared/widgets/list_gradient.dart';
+import '../../../../shared/widgets/list_gradient.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
