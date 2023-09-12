@@ -50,14 +50,6 @@ class FloraEduAppDrawer extends StatelessWidget {
             leading: const Icon(Icons.image),
             title: const Text('Галерија'),
           ),
-          const Divider(),
-          ListTile(
-            onTap: () {
-              Navigator.of(context).pushReplacement(SplashScreen.route());
-            },
-            leading: const Icon(Icons.abc),
-            title: const Text('Test'),
-          ),
         ],
       ),
     );
