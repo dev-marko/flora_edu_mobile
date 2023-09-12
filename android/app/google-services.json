@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "808218864114",
+    "firebase_url": "https://flora-edu-mobile-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "flora-edu-mobile",
+    "storage_bucket": "flora-edu-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808218864114:android:9c288d9a9dca89d29fa36b",
+        "android_client_info": {
+          "package_name": "com.example.flora_edu_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808218864114-nmhd3lmejt5jbj0k9o0nd5svjq2aeqj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808218864114-nmhd3lmejt5jbj0k9o0nd5svjq2aeqj2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "808218864114-2s5v16rki6v2k4fq62coujk0j9mvk049.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.floraEduMobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
