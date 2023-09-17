@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import '../../features/plant_gallery/screens/plant_gallery_screen.dart';
 import '../../features/plants/presentation/screens/plants_list_screen.dart';
 import '../../features/shops/presentation/screens/shops_map_screen.dart';
-import '../screens/splash_screen.dart';
 
 class FloraEduAppDrawer extends StatelessWidget {
   const FloraEduAppDrawer({super.key});
